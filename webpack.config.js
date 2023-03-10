@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 
-const ESLintPlugin = require('eslint-webpack-plugin');   !
+const ESLintPlugin = require('eslint-webpack-plugin'); 
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -10,17 +10,17 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {                 
-    // contentBase: './dist'      
+    // contentBase: './dist'     
     static: './'
   },                           
   devtool: 'eval-source-map',  
   plugins: [
-    new ESLintPlugin(), !
+    new ESLintPlugin(), 
     new CleanWebpackPlugin({
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'movie ticket',
       template: './src/index.html',
       inject: 'body'
     })
