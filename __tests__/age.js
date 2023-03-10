@@ -24,4 +24,10 @@ describe("Age ", () => {
       expect(myAge.getVenusAge()).toEqual(48);
     });
   });
+
+  describe("getMarsAge()", () => {
+    it("should calculate the age correctly in Mars years", () => {
+      expect(myAge.getMarsAge()).toEqual(15);
+    });
+  });
 });
