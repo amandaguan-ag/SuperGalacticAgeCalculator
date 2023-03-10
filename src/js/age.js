@@ -3,5 +3,7 @@ export default class Age {
     this.age = age;
   }
 
-  getMercuryAge() {}
+  getMercuryAge() {
+    return Math.floor(this.age / 0.24);
+  }
 }
