@@ -13,6 +13,8 @@ export default class Galactic {
       return Math.floor(age / 0.24);
     } else if (this.venus) {
       return Math.floor(age / 0.62);
+    } else if (this.mars) {
+      return Math.floor(age / 1.88);
     }
   }
 }
