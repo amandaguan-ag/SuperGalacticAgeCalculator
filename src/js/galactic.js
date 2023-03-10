@@ -6,4 +6,5 @@ export default class Galactic {
     this.mars = mars;
     this.jupiter = jupiter;
   }
+  getAge(age) {}
 }

@@ -11,4 +11,10 @@ describe("Galactic ", () => {
       expect(galactic.jupiter).toBe(false);
     });
   });
+  describe("getAge for Mercury", () => {
+    it("should test that age has a default of age on Earth", function () {
+      const newGalacticCalc = new Galactic();
+      expect(newGalacticCalc.getAge(21)).toEqual(21);
+    });
+  });
 });
