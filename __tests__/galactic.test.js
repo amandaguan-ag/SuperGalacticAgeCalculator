@@ -28,5 +28,9 @@ describe("Galactic ", () => {
       const galactic = new Galactic(false, false, false, true, false);
       expect(galactic.getAge(21)).toEqual(11);
     });
+    it("should test that age can be converted to Jupiter age", function () {
+      const galactic = new Galactic(false, false, false, false, true);
+      expect(galactic.getAge(21)).toEqual(1);
+    });
   });
 });
