@@ -36,4 +36,18 @@ describe("Age ", () => {
       expect(myAge.getJupiterAge()).toEqual(2);
     });
   });
+
+  describe("getYearsSinceBirthday", () => {
+    it("should return the correct number of years on each planet since a past birthday", () => {
+      const myAge = new Age(56);
+      const yearsSince43rdBirthday = myAge.getYearsSinceBirthday(43);
+      expect(yearsSince43rdBirthday).toEqual({
+        earthYears: 13,
+        mercuryYears: "54.17",
+        venusYears: "20.97",
+        marsYears: "6.91",
+        jupiterYears: "1.09",
+      });
+    });
+  });
 });
