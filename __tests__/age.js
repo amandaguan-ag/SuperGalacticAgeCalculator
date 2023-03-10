@@ -46,7 +46,7 @@ describe("Age ", () => {
         mercuryYears: "54.17",
         venusYears: "20.97",
         marsYears: "6.91",
-        jupiterYears: "1.09",
+        jupiterYears: "1.10",
       });
     });
   });
