@@ -7,5 +7,7 @@ export default class Age {
     return Math.floor(this.age / 0.24);
   }
 
-  getVenusAge() {}
+  getVenusAge() {
+    return Math.floor(this.age / 0.62);
+  }
 }
