@@ -24,5 +24,9 @@ describe("Galactic ", () => {
       const galactic = new Galactic(false, false, true, false, false);
       expect(galactic.getAge(21)).toEqual(33);
     });
+    it("should test that age can be converted to Mars age", function () {
+      const galactic = new Galactic(false, false, false, true, false);
+      expect(galactic.getAge(21)).toEqual(11);
+    });
   });
 });
