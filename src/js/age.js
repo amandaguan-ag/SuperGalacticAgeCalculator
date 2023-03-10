@@ -11,5 +11,9 @@ export default class Age {
     return Math.floor(this.age / 0.62);
   }
 
-  getMarsAge() {}
+  getMarsAge() {
+    return Math.floor(this.age / 1.88);
+  }
+
+  getJupiterAge() {}
 }

@@ -30,4 +30,10 @@ describe("Age ", () => {
       expect(myAge.getMarsAge()).toEqual(15);
     });
   });
+
+  describe("getJupiterAge()", () => {
+    it("should calculate the age correctly in Jupiter years", () => {
+      expect(myAge.getJupiterAge()).toEqual(2);
+    });
+  });
 });
