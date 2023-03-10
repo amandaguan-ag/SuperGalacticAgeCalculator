@@ -39,14 +39,26 @@ describe("Age ", () => {
 
   describe("getYearsSinceBirthday", () => {
     it("should return the correct number of years on each planet since a past birthday", () => {
-      const myAge = new Age(56);
-      const yearsSince43rdBirthday = myAge.getYearsSinceBirthday(43);
-      expect(yearsSince43rdBirthday).toEqual({
-        earthYears: 13,
-        mercuryYears: "54.17",
-        venusYears: "20.97",
-        marsYears: "6.91",
-        jupiterYears: "1.10",
+      const yearsSince25thBirthday = myAge.getYearsSinceBirthday(25);
+      expect(yearsSince25thBirthday).toEqual({
+        earthYears: 5,
+        mercuryYears: '20.83',
+        venusYears: '8.06',
+        marsYears: '2.66',
+        jupiterYears: '0.42'
+      });
+    });
+  });
+
+  describe("getYearsUntilBirthday", () => {
+    it("should return the correct number of years on each planet until a future birthday", () => {
+      const yearsUntil35thBirthday = myAge.getYearsUntilBirthday(35);
+      expect(yearsUntil35thBirthday).toEqual({
+        earthYears: 5,
+        mercuryYears: '20.83',
+        venusYears: '8.06',
+        marsYears: '2.66',
+        jupiterYears: '0.42'
       });
     });
   });

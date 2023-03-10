@@ -29,4 +29,5 @@ export default class Age {
       jupiterYears: (earthYearsPassed / 11.86).toFixed(2),
     };
   }
+  getYearsUntilBirthday(pastBirthday) {}
 }
