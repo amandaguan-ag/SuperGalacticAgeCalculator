@@ -9,6 +9,8 @@ export default class Galactic {
   getAge(age) {
     if (this.earth) {
       return age;
+    } else if (this.mercury) {
+      return Math.floor(age / 0.24);
     }
   }
 }
