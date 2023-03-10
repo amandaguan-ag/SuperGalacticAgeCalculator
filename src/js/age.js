@@ -1,3 +1,5 @@
 export default class Age {
-  constructor(age) {}
+  constructor(age) {
+    this.age = age;
+  }
 }
