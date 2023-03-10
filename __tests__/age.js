@@ -12,10 +12,16 @@ describe("Age ", () => {
       expect(myAge.age).toEqual(30);
     });
   });
-  
+
   describe("getMercuryAge()", () => {
     it("should calculate the age correctly in Mercury years", () => {
       expect(myAge.getMercuryAge()).toEqual(125);
+    });
+  });
+
+  describe("getVenusAge()", () => {
+    it("should calculate the age correctly in Venus years", () => {
+      expect(myAge.getVenusAge()).toEqual(48);
     });
   });
 });
